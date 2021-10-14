@@ -1,7 +1,8 @@
 <div class="bg-dark border-right p-3" id="sidebar">
     <h3 class="text-light">Gifs-App</h3>
+    <p class="text-light">----Dflopez----</p>
     <hr class="text-light">
     <div class="list-group list-reset">
-        <a *ngFor="let item of historySearch" href="#" class="list-group-item list-group-action mt-1">{{ item | titlecase }}</a>
+        <a *ngFor="let item of historySearch" (click)="searchHistory(item)" href="#" class="list-group-item list-group-action mt-1">{{ item | titlecase }}</a>
     </div>
 </div>
